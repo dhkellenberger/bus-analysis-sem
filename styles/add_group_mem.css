@@ -1,0 +1,280 @@
+:root{
+    --gold-color: #6E5A3D;
+    --grey-color: #D9D9D9CC;
+    --brown-color: #765B4FCC;
+    --dark-blue-color: #111644;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 152px;
+    left: 0px;
+    margin: 0 auto;
+    background: var(--gold-color);
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    color: #FFF3F3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    gap: 72px;
+    list-style: none;
+}
+
+nav ul li img{
+    filter: contrast(100);
+}
+
+nav ul li a{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.banner{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 73px;
+    background: #404040;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.banner h2{
+    position: absolute;
+    width: 1436px;
+    height: 73px;
+    left: 40vw;
+    top: -35px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 225px;
+    width: 100vw;
+    height: 750px;
+
+    background: #404040;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.content .courses form h2 {
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content .courses form table{
+    position: absolute;
+    width: 600px;
+    height: 554px;
+    left: 10px;
+    top: 110px;
+
+    background: #FFFFFF;
+    border: 8px solid #7B674A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+thead{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 584px;
+    background-color: #111644;
+    text-align: center;
+}
+
+th {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: inline;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content .courses form #populate{
+    position: absolute;
+    width: 350px;
+    height: 49px;
+    left: 125px;
+    top: 675px;
+
+    background: #7F6B4E;;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: "Alegreya Sans", sans-serif;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.content .group-students form h2{
+    position: absolute;
+    left: 775px;
+    top: 30px;
+    
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content .group-students form h3{
+    position: absolute;
+    left: 1400px;
+    top: 20px;
+    
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content .group-students form #groups{
+    position: absolute;
+    width: 600px;
+    height: 554px;
+    left: 625px;
+    top: 110px;
+
+    background: #FFFFFF;
+    border: 8px solid #7B674A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.content .group-students form #students{
+    position: absolute;
+    width: 600px;
+    height: 554px;
+    left: 1250px;
+    top: 110px;
+
+    background: #FFFFFF;
+    border: 8px solid #7B674A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.content .group-students form #submit{
+    position: absolute;
+    width: 300px;
+    height: 49px;
+    left: 1400px;
+    top: 675px;
+
+    background: #7F6B4E;;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: "Alegreya Sans", sans-serif;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
